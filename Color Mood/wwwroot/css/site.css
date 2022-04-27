@@ -1,0 +1,39 @@
+@import "_overrides.css";
+
+body {
+    background-color: var(--bg-secondary);
+}
+
+#navbar {
+    height: var(--navbar-height);
+}
+
+#content {
+    min-height: var(--content-height);
+}
+
+#content > #palette-render-row {
+    height: var(--content-height);
+    min-height: var(--content-height);
+}
+
+#search-input {
+    width: 600px;
+    max-width: 600px;
+}
+
+#search-results {
+    margin: 3em 7em 3em 7em;
+}
+
+#title-search {
+    margin-top: 12em
+}
+
+.search-palette-item {
+    width: 400px;
+}
+
+.palette-container {
+    height: 130px;
+}

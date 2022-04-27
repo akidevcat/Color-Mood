@@ -1,0 +1,63 @@
+﻿@import "_variables.css";
+
+.o-fg-accent {
+    color: var(--o-accent);
+}
+
+.o-bg-accent {
+    color: var(--o-accent);
+}
+
+.o-fg-primary {
+    color: var(--fg-primary);
+}
+
+.o-fg-secondary {
+    color: var(--fg-secondary);
+}
+
+.o-fg-bg-primary {
+    color: var(--bg-primary);
+}
+
+.o-fg-bg-secondary {
+    color: var(--bg-secondary);
+}
+
+.o-bg-primary {
+    background-color: var(--bg-primary);
+}
+
+.o-bg-secondary {
+    background-color: var(--bg-secondary);
+}
+
+.o-bg-fg-primary {
+    background-color: var(--fg-primary);
+}
+
+.o-bg-fg-secondary {
+    background-color: var(--fg-secondary);
+}
+
+.button-hide {
+    background: none;
+    border: none;
+}
+
+.rounded-extra {
+    border-radius: 25px !important;
+}
+
+.rounded-start-extra {
+    border-radius: 10px 0 0 10px !important;
+}
+
+.rounded-end-extra {
+    border-radius: 0 10px 10px 0 !important;
+}
+
+.search-palette-item-col {
+    min-width: 20px;
+    max-width: 100%;
+}

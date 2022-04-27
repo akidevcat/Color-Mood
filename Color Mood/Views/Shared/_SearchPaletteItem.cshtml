@@ -1,0 +1,25 @@
+﻿@model PaletteResultViewModel
+
+<div class="container shadow-lg o-bg-secondary rounded rounded-extra border-0 p-3 ps-4 pe-4">
+    <button class="row border-0 bg-transparent" onclick="window.open('palette?p=@Model?.Palette?.ToString()', '_blank', 'noreferrer,noopener')">
+        @{
+            for (var i = 0; i < Model?.Palette?.Colors.Count; i++)
+            {
+                var color = Model.Palette?.Colors[i];
+                <div class="col search-palette-item-col@(i == 0 ? " rounded-start-extra" : "")@(i == Model.Palette?.Colors.Count - 1 ? " rounded-end-extra" : "")" style="background-color: #@color.ToString()">
+                    <div class="container palette-container rounded-3">
+
+                    </div>
+                </div>
+            }
+        }
+    </button>
+    <div class="row mt-2">
+        <div class="col text-start o-fg-primary">
+            <h4>By: <a class="h5 o-fg-primary" href="@Model?.PhotographerUrl" target="_blank" rel="noreferrer noopener">@Model?.Photographer</a></h4>
+        </div>
+        <div class="col-auto align-self-end">
+            <button class="btn o-bg-secondary btn-outline-dark shadow-sm rounded rounded-extra" onclick="window.open('@Model?.PhotoUrl', '_blank', 'noreferrer,noopener')">Image</button>
+        </div>
+    </div>
+</div>

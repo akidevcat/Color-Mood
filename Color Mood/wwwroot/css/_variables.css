@@ -1,0 +1,10 @@
+﻿:root {
+    --o-accent: #e86868;
+    --fg-primary: #333333;
+    --fg-secondary: #4d4747;
+    --bg-primary: #f3f3f3;
+    --bg-secondary: #e7e7e7;
+    
+    --navbar-height: 75px;
+    --content-height: calc(100vh - var(--navbar-height));
+}

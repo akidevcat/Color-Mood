@@ -1,0 +1,14 @@
+﻿@model Palette
+
+<div id="palette-render-row" class="row">
+    @foreach (var color in Model.Colors)
+    {
+        var colorText = color.ToString();
+        
+        <div class="col d-flex text-center align-items-center h-100 justify-content-center align-items-center" style="background-color: #@colorText">
+            <button class="btn shadow-lg @(color.IsLight ? "btn-outline-dark" : "btn-outline-light") rounded-extra border-3" onclick="navigator.clipboard.writeText('#@colorText');">
+                <h1 class="">#@colorText</h1>
+            </button>
+        </div>
+    }
+</div>

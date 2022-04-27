@@ -1,0 +1,24 @@
+﻿@model SearchViewModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+
+@{
+    if (Model?.SearchResults == null)
+    {
+        <partial name="_TitleSearch"/>
+    }
+    else
+    {
+        <partial name="_SearchResults" model="Model"/>
+        
+    @section NavbarExtension {
+        <form class="input-group ms-3" method="get" asp-action="Search">
+            <partial name="_SearchInput"/>
+            <partial name="_SearchInputOptions"/>
+        </form>
+        }
+    }
+}
+    

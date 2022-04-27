@@ -1,0 +1,12 @@
+﻿@model SearchViewModel
+
+<div id="search-results" class="row row-cols-2 justify-content-center">
+    @{
+        foreach (var result in Model?.SearchResults!)
+        {
+            <div class="col search-palette-item m-3 p-0">
+                <partial name="_SearchPaletteItem" model="result"/>
+            </div>
+        }
+    }
+</div>
